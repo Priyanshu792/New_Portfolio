@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery_style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="/New Portfolio blendder stuff/Portfolio-Page/images/logo_image.jpg">
+            </a>
+        </div>
+    
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+            <li class="link"><a href="index.html#features">Features</a></li>
+            <li class="link"><a href="index.html#pricing">Pricing</a></li>
+            <li class="link"><a href="index.html#footer">Find me</a></li>
+        </ul>
+        <button class="btn">Hire me</button>
+    </nav>
+    
+    <div class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        
+        <!-- Image Gallery -->
+        <div class="gallery-item">
+            <img src="images/image_3.PNG" alt="Work 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_4.PNG" alt="Work 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_5.PNG" alt="Work 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_6.PNG" alt="Work 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_7.PNG" alt="Work 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_8.PNG" alt="Work 6">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image_9.PNG" alt="Work 7">
+        </div>
+        
+        <!-- Video Items -->
+        <div class="gallery-item">
+            <video controls>
+                <source src="images/Videos/video_1.MP4" type="video/mp4">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="images/Videos/video_2.MP4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div id="imageModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="modalContent" class="modal-content">
+            <a class="prev" id="prevArrow">&#10094;</a>
+            <a class="next" id="nextArrow">&#10095;</a>
+        </div>
+
+    </div>
+    <!-- <script async defer src="galleryscript.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Priyanshu's Portfolio - Software Engineer & CG Artist">
+    <title>Priyanshu's Portfolio</title>
+    <link rel="preload" href="images/Cyberpunk-pattern.avif" as="image">
+    <link rel="preload" href="images/Portrait.JPG" as="image">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- <link rel="shortcut icon" href="images/logo_image.jpg" type="image/x-icon"> -->
+    <!-- <link rel="preload" href="images/image_1.PNG" as="image"> -->
+</head>
+<body>
+    <!-- Page Transition -->
+    <div class="page-transition"></div>
+    
+    <!-- Main Page Container -->
+    <div class="page-wrapper">
+        <!-- Fixed Navigation -->
+        <nav class="main-nav">
+            <div class="container nav-inner">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/image_1.jpg" loading="eager" alt="Logo">
+                    </a>
+                </div>
+                <button class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li class="link"><a href="#hero-section">Home</a></li>
+                    <li class="link"><a href="#gallery-section">Gallery</a></li>
+                    <li class="link"><a href="#features-section">Features</a></li>
+                    <li class="link"><a href="#pricing-section">Pricing</a></li>
+                    <li class="link"><a href="#contact-section">Contact</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="btn primary">Hire me</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Section with 100vh - nav height -->
+            <section id="hero-section" class="hero-section">
+                <div class="video-background">
+                    <video id="background-video" autoplay muted loop playsinline>
+                        <source src="images/Videos/Combined_vids - Made with Clipchamp.mp4" type="video/mp4">
+                        <!-- Additional video sources will be added by JavaScript -->
+                    </video>
+                </div>
+                <div class="container header-container">
+                    <div class="content">
+                        <div class="text-content">
+                            <h1 class="glitch-text">Hello World_</h1>
+                            <div class="intro-text">
+                                <h2 class="dynamic-text">I'm <span class="highlight">Priyanshu</span></h2>
+                                <div class="typing-text">
+                                    <span class="text first-text">A</span>
+                                    <span class="text sec-text">Software Engineer</span>
+                                </div>
+                            </div>
+                            <p class="bio">
+                                I am an aspiring software engineer and CG artist with a 
+                                passion for creating innovative digital experiences. My work 
+                                combines technical expertise with creative vision to build 
+                                solutions that stand out.
+                            </p>
+                            <div class="cta-buttons">
+                                <button class="btn primary">View Projects</button>
+                                <button class="btn secondary">Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile-wrapper">
+                            <img src="images/image_1.jpg" alt="Priyanshu" class="profile-image">
+                            <div class="profile-background"></div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/priyanshuhoney" class="social-icon github" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/priyanshu-honey" class="social-icon linkedin" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="https://www.artstation.com/priyanshuhoney" class="social-icon artstation" target="_blank" rel="noopener">ArtStation</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features-section" class="features-section">
+                <div class="section-inner">
+                    <h2 class="header">My Features</h2>
+                    <div class="features">
+                        <div class="card">
+                            <h4>Engineer</h4>
+                            <p>
+                                I may become a software engineer so beware of your secure applications.
+                            </p>
+                            <a href="https://github.com/priyanshuhoney" target="_blank" rel="noopener">View Projects</a>
+                        </div>
+                        <div class="card">
+                            <h4>CG Artist</h4>
+                            <p>
+                                I may also become a CG Artist and make NSFW art in blender so beware of that when you are about to open my profile in your workplace.
+                            </p>
+                            <a href="https://www.artstation.com/priyanshuhoney" target="_blank" rel="noopener">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Gallery Section -->
+            <section id="gallery-section" class="gallery-section">
+                <div class="container">
+                    <h2 class="section-header">My Gallery</h2>
+                    <div class="gallery-grid">
+                        <!-- Images -->
+                        <div class="gallery-item">
+                            <img src="images/image_1.jpg" loading="lazy" alt="Logo Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_2.PNG" loading="lazy" alt="Profile Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_3.png" loading="lazy" alt="Gallery Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_4.png" loading="lazy" alt="Gallery Image 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_5.png" loading="lazy" alt="Gallery Image 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_6.png" loading="lazy" alt="Glass Render">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_7.png" loading="lazy" alt="Infinity Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_8.png" loading="lazy" alt="Mirror Selfie Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_9.png" loading="lazy" alt="Port Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_10.png" loading="lazy" alt="Scene 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_11.png" loading="lazy" alt="Untitled Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_12.png" loading="lazy" alt="Wallpaper">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_13.jpg" loading="lazy" alt="Sample 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_14.jpg" loading="lazy" alt="Sample 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_15.jpg" loading="lazy" alt="Sample 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_16.png" loading="lazy" alt="Scene 0033">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_17.png" loading="lazy" alt="Infinity Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_18.png" loading="lazy" alt="Mirror Selfie">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/image_19.png" loading="lazy" alt="Ship Scene">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add Modal for Fullscreen -->
+            <div id="mediaModal" class="media-modal">
+                <span class="close-modal">&times;</span>
+                <div class="modal-content">
+                    <div class="modal-media-container"></div>
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+            </div>
+        
+            <!-- Pricing Section -->
+            <section id="pricing-section" class="pricing-section">
+                <div class="section-inner">
+                    <h2 class="header">PROJECT PRICING PLANS</h2>
+                    <p class="sub-header">My project plans comes in varios membership tiers, each tailored to cater to different project types</p>
+                    <div class="pricing">
+                        <div class="card">
+                            <div class="content">
+                                <h4>Basic plan</h4>
+                                <h3>Rs 800/-</h3>
+                                <p>
+                                    Static shot 
+                                </p>
+                                <p>
+                                    Will Provide source file as needed
+                                </p>
+                            </div>
+                            <button class="btn">Join now</button>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <h4>Gold plan</h4>
+                                <h3>Rs 2000~</h3>
+                                <p>
+                                    Single shot, Single camera
+                                </p>
+                                <p>
+                                    Little or no moving parts
+                                </p>
+                            </div>
+                            <button class="btn">Join now</button>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <h4>Platinum plan</h4> <!-- Changed from </h3> to </h4> -->
+                                <h3>Rs 4000~</h3>
+                                <p>
+                                    Multiple shots
+                                </p>
+                                <p>
+                                    Multiple Camera angles
+                                </p> 
+                                <p>
+                                    Moving parts
+                                </p>
+                            </div>
+                            <button class="btn">Join now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="contact-section" class="main-footer">
+            <div class="container">
+                <span class="blur-1"></span>
+                <span class="blur-2"></span>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="logo">
+                            <img src="images/image_1.PNG" alt="Logo">
+                            <h3>Priyanshu's Portfolio</h3>
+                        </div>
+                        <p class="footer-description">
+                            Creating digital art and software solutions with passion and precision.
+                            Let's bring your ideas to life through code and creativity.
+                        </p>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#hero-section">Home</a></li>
+                            <li><a href="#gallery-section">Gallery</a></li>
+                            <li><a href="#features-section">Services</a></li>
+                            <li><a href="#pricing-section">Pricing</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> priyanshuhoney2002@gmail.com</li>
+                            <!-- <li><i class="fas fa-phone"></i> +91 888XXXXXXX</li> -->
+                            <!-- <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</li> -->
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h4>Connect With Me</h4>
+                        <div class="socials">
+                            <a href="https://github.com/Priyanshu792" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                            <!-- <a href="https://www.artstation.com/priyanshuhoney" target="_blank" rel="noopener"><i class="fab fa-artstation"></i></a> -->
+                            <a href="https://www.linkedin.com/in/priyanshu-k792?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/Priyanshu_.792" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="copyright">Copyright © 2023 Priyanshu's Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
